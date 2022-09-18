@@ -19,7 +19,7 @@ Function GetTheUser{
 }
 
 $UserName = GetTheUser
-Write-Host("User is $UserName")
+Write-Host("The User is $UserName")
 
 Function Host{
     ([System.Net.Dns]::GetHostName())
