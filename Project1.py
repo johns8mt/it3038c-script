@@ -12,7 +12,7 @@ print("The date today is...", today)
 
 
 #I tried multiple diifferent ways to get the date to work but found the today=date.today() method from https://www.programiz.com/python-programming/datetime/current-datetime
-#To change up the code I added the time as well.
+#To change up the code I decided I would add the time as well which II fiigured out to work that in trying a few different time commands.
 #1. Goal of the script is to display the current date and time using python. 
 #2. To run the script simply copy the script and run iin any IDE that allows python. 
 #3. The output of the script should be similar to this (will change depending on date and time): 
