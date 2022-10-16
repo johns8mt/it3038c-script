@@ -1,4 +1,6 @@
-I decided to go with carbon. Carbon module adds more automated system admin processes. When normally installing powershell this does not happen, with this way of doing it we wont have to worry about latter changing these settings.
+I decided to go with carbon. Carbon module adds more automated system admin processes. When normally installing powershell this does not happen, with this way of doing it we wont have to worry about latter changing these settings. 
+
+I decided this would be useful to save time and processes in the real world or for a coder who wants to just code using ps at home.
 
 Below are the steps on how to install Carbon using PS:
 
