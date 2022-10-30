@@ -1,5 +1,5 @@
 Node Calculator App
-This is a calculator for the browser created with js, html, and css.
+This is a calculator for the browser created with js, html, and css. Instead of needing to Google calculator, or have one with you at all times, you can simply execute the below commands and download the neccesary files into a folder and have one of your own!
 
 Installation
 Download and save each file into a folder on your PC. Make sure you go to the mentioned directory using the 'cd' command in a terminal window.
