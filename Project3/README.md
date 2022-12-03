@@ -23,10 +23,10 @@ This code will setup the screen that we will play on.
 
 wn = turtle.Screen()
 wn.bgcolor("black")
-wn.title("Square Invaders")
+wn.title("Invaders of Space")
 wn = turtle.Screen()
 wn.bgcolor("black")
-wn.title("Square Invaders")
+wn.title("Invaders of Space")
 
 Draw border:
 This code will setup the border around the gaming window.
