@@ -1,16 +1,16 @@
-Introduction
+Introduction:
 I made a game similar to Space invaders called Invaders of Space! Your lone Triangle will need to destory as many enimies as possible and try to last as long as you can!
 
 I based my code off of code found here: https://www.geeksforgeeks.org/building-space-invaders-using-pygame-python/
 Geeks for Geeks is a great site I used to get ideas for all my "nerdy" projects.
 
-BEFORE YOU START
+BEFORE YOU START:
 You will need to have VSCode and at least Python 3 installed in order to get this code to work. You can find downloads for these in the links below. Python: https://www.python.org/downloads/ VSCode: https://code.visualstudio.com/download
 
-How to Start Running Code
+How to Start Running Code:
 After you have Python and VSCode installed. Open the .py file in VSCode and then right click on the code and click "Run Python file in Terminal" then you will be able to play.
 
-Modules
+Modules:
 You have to Import these modules in order to get the Square Invaders game to work.
 
 import turtle
@@ -18,7 +18,7 @@ import os
 import math
 import random
 
-Set up the screen
+Set up the screen:
 This code will setup the screen that we will play Sqaure Invaders on.
 
 wn = turtle.Screen()
@@ -28,7 +28,7 @@ wn = turtle.Screen()
 wn.bgcolor("black")
 wn.title("Square Invaders")
 
-Draw border
+Draw border:
 This code will setup the border around the gaming window.
 
 border_pen = turtle.Turtle()
@@ -43,13 +43,13 @@ for side in range(4):
 	border_pen.lt(90)
 border_pen.hideturtle()	
 
-Set the score to 0
+Set the score to 0:
 This code will set the scoreboard zero.
 
 #Set the score to 0
 score = 0
 
-Draw the scoreboard
+Draw the scoreboard:
 This code will setup the scoreboard and keep track of the score.
 
 score_pen = turtle.Turtle()
@@ -61,7 +61,7 @@ scorestring = "Score: %s" %score
 score_pen.write(scorestring, False, align="left", font=("Arial", 14, "normal"))
 score_pen.hideturtle()
 
-Create the player turtle
+Create the player turtle:
 This code creates the lone triangle character you have to make survive the squares!
 
 player = turtle.Turtle()
@@ -74,17 +74,17 @@ player.setheading(90)
 
 playerspeed = 15
 
-Choose A Number of Enemies
+Choose A Number of Enemies:
 This code will create the amount of enemies your triangle will be facing.
 
 number_of_enemies = 5
 
-Create an empty list of enemies
+Create an empty list of enemies:
 This code will create a list of emenmies.
 
 enemies = []
 
-Add enemies to the list
+Add enemies to the list:
 This code will add enemies to the list and allow you to customize your enemies.
 
 for i in range(number_of_enemies):
@@ -102,7 +102,7 @@ for enemy in enemies:
 
 enemyspeed = 2
 
-Create the player's bullet
+Create the player's bullet:
 This code creates bullets that the player will shoot.
 
 bullet = turtle.Turtle()
@@ -117,7 +117,7 @@ bullet.hideturtle()
 
 bulletspeed = 25
 
-Define bullet state
+Define bullet state:
 This code allows the bullet to be shot at the squares.
 
 #ready - ready to fire
@@ -125,7 +125,7 @@ This code allows the bullet to be shot at the squares.
 bulletstate = "ready"
 
 
-Move the player left and right
+Move the player left and right:
 This code allows you to move left and right of the screen.
 
 def move_left():
@@ -142,7 +142,7 @@ def move_right():
 		x = 280
 	player.setx(x)
   
-Declare the bulletstate global
+Declare the bulletstate global:
 This code will allow your bullet to shoot from anywhere in the border.	
 
 def fire_bullet():
@@ -150,7 +150,7 @@ def fire_bullet():
 	if bulletstate == "ready":
 		bulletstate = "fire"
     
-Move the bullet to the just above the player
+Move the bullet to the just above the player:
 This code will place make the bullet shoot out the end point of the triangle.
 
 x = player.xcor()
@@ -165,7 +165,7 @@ def isCollision(t1, t2):
 	else:
 		return False
     
-Create keyboard bindings
+Create keyboard bindings:
 This code bind the game controls to buttons on your keyboard.
 
 turtle.listen()
@@ -173,7 +173,7 @@ turtle.onkey(move_left, "Left")
 turtle.onkey(move_right, "Right")
 turtle.onkey(fire_bullet, "space")
 
-Main Game Loop
+Main Game Loop:
 This code is what runs the game, moves the enemies, checks for colliosn with bullet and enemy, resets the bullets, updates the scoreboard, moves the bullet, checks to see if the bullet is out the border at the top, and then lastly will reset the game. The main game loop has a lot going on and combines all these elements.
 while True:
 	
