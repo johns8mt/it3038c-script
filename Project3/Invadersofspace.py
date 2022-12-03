@@ -6,7 +6,7 @@ import random
 #Set up the screen
 wn = turtle.Screen()
 wn.bgcolor("black")
-wn.title("Square Invaders")
+wn.title("Invaders of Space")
 
 #Draw border
 border_pen = turtle.Turtle()
