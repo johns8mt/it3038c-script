@@ -11,7 +11,7 @@ How to Start Running Code:
 After you have Python and VSCode installed. Open the .py file in VSCode and then right click on the code and click "Run Python file in Terminal" then you will be able to play.
 
 Modules:
-You have to Import these modules in order to get the Square Invaders game to work.
+You have to Import these modules in order to get the game to work.
 
 import turtle
 import os
@@ -19,7 +19,7 @@ import math
 import random
 
 Set up the screen:
-This code will setup the screen that we will play Sqaure Invaders on.
+This code will setup the screen that we will play on.
 
 wn = turtle.Screen()
 wn.bgcolor("black")
